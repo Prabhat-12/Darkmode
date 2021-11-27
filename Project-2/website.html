@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darkmode Website</title>
+    <link rel="stylesheet" href="/Project-2/website.css">
+     
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#"><img src="/Project-2/Images/logo.png " class="logo"></a>
+            <div class="toggle"></div>
+            <ul class="navigation"> 
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Today's Special</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><span class="themeSwitch"> <img src="/" alt=""></span></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>It's not just Coffee <br>It's <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ex quidem deleniti saepe magnam iste eveniet aliquam accusantium harum necessitatibus!</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgbox">
+                <img src="/Project-2/Images/Starbucks Cup.png" alt="">
+            </div>
+        </div>
+            <ul class="sci">
+               <li><a href="#"><img src="/Project-2/Social media logos/facebook.svg"></a></li>
+               <li><a href="#"><img src="/Project-2/Social media logos/instagram.svg"></a></li>
+               <li><a href="#"><img src="/Project-2/Social media logos/twitter.svg"></a></li>
+               
+            </ul>
+        
+    </section>
+
+    <script>
+        let themeSwitch = document.querySelector('.themeSwitch');
+        let body = document.querySelector('body');
+        themeSwitch.onclick = function(){
+            themeSwitch.classList.toggle('active');
+            body.classList.toggle('dark');
+        }
+        let menutoggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        menutoggle.onclick = function(){
+            menutoggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
