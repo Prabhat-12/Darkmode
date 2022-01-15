@@ -23,7 +23,7 @@ section{
     position: relative;
     width: 100%;
     min-height: 100vh;
-   padding: 100px;   
+   padding: 78px;   
    display: flex;
    justify-content: center;
    align-items: center;
@@ -31,7 +31,7 @@ section{
 }
 header{
     position: absolute;
-    top: 0;
+    top: 18px;
     left: 0;
     width: 100%;
     padding: 10px 10px;
@@ -43,15 +43,19 @@ header{
 header .logo{
     position: relative;
     max-width: 75px;
+    top: 8px;
+    left: 15px;
     margin: 0px 10px;
 }
 
 header ul{
     position: relative;
+    right: 40px;
     display: flex;
     justify-content: center;
    align-items: center;
    text-decoration: none;}
+
 header ul li{
     display: flex;
    list-style: none;
@@ -61,7 +65,7 @@ header ul li{
  
 header ul li a{
     display: inline-block;
-    color: var(--black);
+    color: var(--black);font-size: 1.3rem;
     font-weight: 500;
    text-decoration: none;
    padding: 3px 3px;
@@ -69,7 +73,7 @@ header ul li a{
 
 .content{
     position: relative;
-    width: 115%;
+    width: 138%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,25 +81,36 @@ header ul li a{
 }
 .content .textbox {
     position: relative;
-    max-width: 470px;
+    top: 30px;
+    left: 30px;
+    max-width: 714px;
     z-index: 1;
 }
 .content .textbox h2{
-    font-size: 3em;
+    font-size: 4em;
     color: var(--black);
     line-height: 1.4em;
-    font-weight: 700 ;
+    font-weight: 700;
     margin-bottom: 40px;
 }
 .content .textbox h2 span{
     color: var(--green);
     font-size: 1.2em;
 }
+
+.content .textbox h3{
+    font-size: 1.8rem;
+    color: #017143;
+    margin-bottom: 1rem;
+}
+
+
 .dark .content .textbox h2 span{
     color: rgb(54, 119, 54);
 }
 .content .textbox p{
     color: var(--black);
+    font-size: 1.2rem;
 }
 .content .textbox a{
     display: inline-block;
@@ -108,29 +123,30 @@ header ul li a{
 }
 .content .imgbox{
     position: relative;
-    width: 530px;
+    top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .content .imgbox::before{
-content: '';
-position:absolute;
-width: 300px;
-height: 300px;
-background: var(--green);
-border-radius: 50%;
+    content: '';
+    position: absolute;
+    width: 420px;
+    height: 400px;
+    background: var(--green);
+    border-radius: 50%;
 }
 .content .imgbox img{
     position: relative;
-    max-width: 310px;
+    left: 15px;
+    max-width: 400px;
     z-index: 1;
 }
  
 .sci{
     position: absolute;
     bottom: 10px;
-    left: 100px;
+    left: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,12 +200,12 @@ border-radius: 50%;
  }
 
  /* now make it responsive */
- @media (max-width:700px){
+ @media (max-width:1000px){
      section{
         position: relative;
         width: 100%;
         min-height: 100vh;
-        padding: 78px;
+        padding: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -197,7 +213,7 @@ border-radius: 50%;
      }
      header {
         position: absolute;
-        top: 18px;
+        top: 0px;
         left: 0px;
         width: 100%;
         padding: 10px 10px;
@@ -208,7 +224,7 @@ border-radius: 50%;
     }
     header .logo {
         position: relative;
-        max-width: 80px;
+        max-width: 60px;
         margin: 0px 0px;
     }
         
@@ -220,11 +236,11 @@ border-radius: 50%;
         }
         header ul li a{
             display: inline-block;
-    color: var(--black);
-    font-weight: 500;
-    text-decoration: none;
-    padding: 16px 7px;
-    font-size: 35px;
+             color: var(--black);
+             font-weight: 500;
+             text-decoration: none;
+             padding: 26px 7px;
+             font-size: 35px;
         }
         .themeSwitch {
             position: relative;
@@ -241,7 +257,7 @@ border-radius: 50%;
         }
         .content {
             position: relative;
-            width: 80%;
+            width: 100%;
             margin: 0px 10px;
             /* padding: 0px 101px 68px 2px; */
             display: flex;
@@ -252,31 +268,36 @@ border-radius: 50%;
         }
         .content .textbox {
             position: relative;
-            max-width: 401px;
+            max-width: 500px;
             z-index: 1;
         }
         .content .textbox h2 {
-            font-size: 3.2em;
-            color: var(--black);
+            font-size: 2.6em;
+            color: var(-black);
             line-height: 1em;
             font-weight: 200;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .textbox h3{
+            font-size: 1.5rem;
         }
         .content .textbox a {
             display: inline-block;
             background-color: #017143;
             color: var(--white2);
             border-radius: 30px;
-            margin: 15px 75px;
+            margin: 10px 155px;
             padding: 15px 15px;
             text-decoration: none;
         }
         .content .textbox p{
-            font-size: 1.3em;
+            font-size: 1.2em;
+            margin-bottom: 0;
         }
         .content .imgbox {
             position: relative;
             width: 270px;
+            height: 280px;
             /* padding: 18px 15px 233px 25px; */
             display: flex;
             justify-content: center;
@@ -285,30 +306,32 @@ border-radius: 50%;
         .content .imgbox::before {
             content: '';
             position: absolute;
-            width: 270px;
-            height: 270px;
+            right: 4px;
+            bottom: 116px;
+            width: 242px;
+            height: 245px;
             background: var(--green);
             border-radius: 50%;
         }
         .content .imgbox img {
             position: relative;
-            max-width: 274px;
+            max-width: 240px;
+            bottom: 110px;
             z-index: 1;
         }
         .sci {
             position: absolute;
-            bottom: 5px;
-            left: 124px;
+            bottom: 22px;
+            left: auto;
             display: flex;
             justify-content: center;
             align-items: center;
         }
         .sci li a {
             display: inline-block;
-            margin-right: 20px;
-            /* padding: 8px; */
-            width: 75px;
-            height: 75px;
+           
+            width: 65px;
+            height: 65px;
             background: var(--black2);
             color: var(--white);
             border-radius: 50%;
@@ -337,20 +360,20 @@ border-radius: 50%;
         }
         .toggle{
             position: relative;
-            width: 80px;
+            width: 100px;
             height: 40px;
-            background: url(/menu.png);
+            background: url(/Project-2/Images/menu.png);
             filter: invert(1);
-            background-size: 60px;
+            background-size: 40px;
             background-position: center;
             background-repeat: no-repeat;
             cursor: pointer;
             z-index: 200;
         }
         .toggle.active{
-            background: url(/close.png);
+            background: url(/Project-2/Images/close.png);
             filter: invert(1);
-            background-size: 40px;
+            background-size: 30px;
             background-position: center;
             background-repeat: no-repeat;
             cursor: pointer;  
